@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展示</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th>编&emsp;号</th>
+            <th>用户名</th>
+            <th>密&emsp;码</th>
+        </tr>
+        {% for cur in data %}
+            <tr>
+            <td>{{ cur.id }}</td>
+            <td>{{ cur.user_name }}</td>
+            <td>{{ cur.user_pwd}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!--pages/index/index.wxml-->
+<view>
+  
+  <!-- <view class="selection">
+    <swiper autoplay="true" indicator-dots="true" indicator-color="black" indicator-active-color="yellow">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item}}">
+            <image></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> -->
+  <!-- <image style="height:200px" mode="aspectFit" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1599053748560&di=43136796d3f9baba75ec6306a3d09cf8&imgtype=0&src=http%3A%2F%2Ft8.baidu.com%2Fit%2Fu%3D3571592872%2C3353494284%26fm%3D79%26app%3D86%26f%3DJPEG%3Fw%3D1200%26h%3D1290"></image> -->
+
+  <view class="selection">
+    <swiper autoplay="true" indicator-dots="true" indicator-color="black" indicator-active-color="yellow">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+            <image style="height:150px" src="{{item}}" mode="aspectFit"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class="selection">
+    <view class="header">
+      <text>精品推荐</text>
+      <text class="text-all">全部精品</text>
+    </view>
+
+    <view class="content">
+      <view class="content-item" wx:for="{{contentItems}}" wx:key="*this">
+        <image src="../../image/img1.png"></image>
+        <view class="content-item-text">
+          <text>这里是标题</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="selection">
+    <view class="header">
+      <text>热门评测</text>
+      <text class="text-all">全部评测</text>
+    </view>
+
+    <view class="list-item" wx:for="{{listItems}}" wx:key="*this">
+      <view class="list-item-images">
+        <image src="../../image/img2.png" class="list-item-images-img"></image>
+        <image src="../../image/avatar.png" class="avatar"></image>
+      </view>
+
+      <view class="list-item-text">
+        <text class="list-item-text-title">这是大标题</text>
+        <text class="list-item-text-content">这是文章内容附近的快速减肥快点结束了咖啡里看到手机啊看电视剧立方空间的临时卡积分了空间都洒了空间里看到手机啊sfjdsjalkfjdisdjfkldslaijfoidsjoaifjdoisjadjfoiasjo
+        </text>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+</view>

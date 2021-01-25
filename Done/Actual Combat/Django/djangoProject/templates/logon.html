@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <script>
+        {#登录#}
+        function logon(){
+            window.location.href="/student/logon/";
+        }
+        function register(){
+            window.location.href="/student/register/";
+        }
+    </script>
+</head>
+<body>
+{#    <input type="button" onclick="test()" value="测试wuchao用户">#}
+{#    <br>#}
+{#    <a href="/student/logon/?uname=pengyy&pwd=123">测试pengyy账户</a>#}
+
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <label>用户名:</label><input type="text" name="uname">
+        </p>
+
+        <p>
+            <label>密&emsp;码:</label><input type="password" name="pwd">
+        </p>
+
+        <p>
+            &emsp;&emsp;&emsp;<input type="button" value="登录" onclick="logon()">
+            &emsp;&emsp;&emsp;<input type="button" value="注册" onclick="register()">
+        </p>
+
+    </form>
+
+</body>
+</html>

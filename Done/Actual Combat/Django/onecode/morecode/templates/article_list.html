@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>article_list</title>
+</head>
+<body>
+    <table style="border: solid 1px blueviolet;">
+        <tr>
+            <th style="border: solid 1px deeppink;width: 50px">指标</th>
+            <th style="border: solid 1px deeppink">名称</th>
+        </tr>
+        {% for line in articles %}
+            <tr style="border: solid 1px lightcoral">
+                <td style="border: solid 1px green"><p>{{line.article_title}}</p></td>
+                <td style="border: solid 1px green"><p>{{line.article_detail}}</p></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
