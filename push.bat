@@ -13,9 +13,6 @@ echo "Finished Push github!"
 git log --stat -1
 pause
 
-git status
-git add .
-git commit -m "%timestamp% backup from windows, comments: %comments%"
 git push gitee main
 echo "Finished Push gitee!"
 git log --stat -1
