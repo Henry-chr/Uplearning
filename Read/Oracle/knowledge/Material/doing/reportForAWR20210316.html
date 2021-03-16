@@ -1,0 +1,1184 @@
+
+<html><head><title>AWR Report for DB: XE, Inst: xe, Snaps: 232-239</title>
+<style type="text/css">
+body.awr {font:bold 10pt Arial,Helvetica,Geneva,sans-serif;color:black; background:White;}
+pre.awr  {font:8pt Courier;color:black; background:White;}
+h1.awr   {font:bold 20pt Arial,Helvetica,Geneva,sans-serif;color:#336699;background-color:White;border-bottom:1px solid #cccc99;margin-top:0pt; margin-bottom:0pt;padding:0px 0px 0px 0px;}
+h2.awr   {font:bold 18pt Arial,Helvetica,Geneva,sans-serif;color:#336699;background-color:White;margin-top:4pt; margin-bottom:0pt;}
+h3.awr {font:bold 16pt Arial,Helvetica,Geneva,sans-serif;color:#336699;background-color:White;margin-top:4pt; margin-bottom:0pt;}
+li.awr {font: 8pt Arial,Helvetica,Geneva,sans-serif; color:black; background:White;}
+th.awrnobg {font:bold 8pt Arial,Helvetica,Geneva,sans-serif; color:black; background:White;padding-left:4px; padding-right:4px;padding-bottom:2px}
+th.awrbg {font:bold 8pt Arial,Helvetica,Geneva,sans-serif; color:White; background:#0066CC;padding-left:4px; padding-right:4px;padding-bottom:2px}
+td.awrnc {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;}
+td.awrc    {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;}
+td.awrnclb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-left: thin solid black;}
+td.awrncbb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-left: thin solid black;border-right: thin solid black;}
+td.awrncrb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-right: thin solid black;}
+td.awrcrb    {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-right: thin solid black;}
+td.awrclb    {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-left: thin solid black;}
+td.awrcbb    {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-left: thin solid black;border-right: thin solid black;}
+a.awr {font:bold 8pt Arial,Helvetica,sans-serif;color:#663300; vertical-align:top;margin-top:0pt; margin-bottom:0pt;}
+td.awrnct {font:8pt Arial,Helvetica,Geneva,sans-serif;border-top: thin solid black;color:black;background:White;vertical-align:top;}
+td.awrct   {font:8pt Arial,Helvetica,Geneva,sans-serif;border-top: thin solid black;color:black;background:#FFFFCC; vertical-align:top;}
+td.awrnclbt  {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-top: thin solid black;border-left: thin solid black;}
+td.awrncbbt  {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-left: thin solid black;border-right: thin solid black;border-top: thin solid black;}
+td.awrncrbt {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-top: thin solid black;border-right: thin solid black;}
+td.awrcrbt     {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-top: thin solid black;border-right: thin solid black;}
+td.awrclbt     {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-top: thin solid black;border-left: thin solid black;}
+td.awrcbbt   {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-top: thin solid black;border-left: thin solid black;border-right: thin solid black;}
+table.tdiff {  border_collapse: collapse; }
+</style></head><body class="awr">
+WARNING: Since the DB Time is less than one second, there was
+         minimal foreground activity in the snapshot period.
+         Some of the percentage values will be invalid.
+
+<br />
+<h1 class="awr">
+WORKLOAD REPOSITORY report for
+
+</h1>
+<p />
+<table border="1" width="500">
+<tr><th class="awrbg">DB Name</th><th class="awrbg">DB Id</th><th class="awrbg">Instance</th><th class="awrbg">Inst num</th><th class="awrbg">Startup Time</th><th class="awrbg">Release</th><th class="awrbg">RAC</th></tr>
+<tr><td class='awrnc'>XE</td><td align="right" class='awrnc'>2943871120</td><td class='awrnc'>xe</td><td align="right" class='awrnc'>1</td><td class='awrnc'>15-3ÔÂ -21 07:03</td><td class='awrnc'>11.2.0.2.0</td><td class='awrnc'>NO</td></tr>
+</table>
+<p />
+<p />
+<table border="1" width="500">
+<tr><th class="awrbg">Host Name</th><th class="awrbg">Platform</th><th class="awrbg">CPUs</th><th class="awrbg">Cores</th><th class="awrbg">Sockets</th><th class="awrbg">Memory (GB)</th></tr>
+<tr><td class='awrnc'>WIN-Q5A37R6RJQQ</td><td class='awrnc'>Microsoft Windows x86 64-bit</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>     .00</td></tr>
+</table>
+<p />
+<table border="1" width="500">
+<tr><th class="awrnobg"></th><th class="awrbg">Snap Id</th><th class="awrbg">Snap Time</th><th class="awrbg">Sessions</th><th class="awrbg">Cursors/Session</th></tr>
+<tr><td class='awrnc'>Begin Snap:</td><td align="right" class='awrnc'>232</td><td align="center" class='awrnc'>16-3ÔÂ -21 07:12:27</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>End Snap:</td><td align="right" class='awrc'>239</td><td align="center" class='awrc'>16-3ÔÂ -21 15:00:19</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Elapsed:</td><td class='awrnc'>&#160;</td><td align="center" class='awrnc'>             467.86 (mins)</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>DB Time:</td><td class='awrc'>&#160;</td><td align="center" class='awrc'>               0.00 (mins)</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+</table>
+<p />
+<h3 class="awr"><a class="awr" name="99999"></a>Report Summary</h3>
+<p />
+Cache Sizes
+<p />
+<table border="1" width="500">
+<tr><th class="awrnobg"></th><th class="awrbg">Begin</th><th class="awrbg">End</th><th class="awrnobg"></th><th class="awrnobg"></th></tr>
+<tr><td class='awrnc'>Buffer Cache:</td><td align="right" class='awrnc'>M</td><td align="right" class='awrnc'>M</td><td class='awrnc'>Std Block Size:</td><td align="right" class='awrnc'>K</td></tr>
+<tr><td class='awrc'>Shared Pool Size:</td><td align="right" class='awrc'>         0M</td><td align="right" class='awrc'>         0M</td><td class='awrc'>Log Buffer:</td><td align="right" class='awrc'>K</td></tr>
+</table>
+<p />Load Profile<p />
+<table border="1" width="500">
+<tr><th class="awrnobg"></th><th class="awrbg">Per Second</th><th class="awrbg">Per Transaction</th><th class="awrbg">Per Exec</th><th class="awrbg">Per Call</th></tr>
+<tr><td class='awrc'>DB Time(s):</td><td align="right" class='awrc'>               0.0</td><td align="right" class='awrc'>               0.0</td><td align="right" class='awrc'>      0.00</td><td align="right" class='awrc'>      0.00</td></tr>
+<tr><td class='awrnc'>DB CPU(s):</td><td align="right" class='awrnc'>               0.0</td><td align="right" class='awrnc'>               0.0</td><td align="right" class='awrnc'>      0.00</td><td align="right" class='awrnc'>      0.00</td></tr>
+<tr><td class='awrc'>Redo size:</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>&#160;</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Logical reads:</td><td align="right" class='awrnc'>               0.0</td><td align="right" class='awrnc'>               1.0</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>Block changes:</td><td align="right" class='awrc'>               0.0</td><td align="right" class='awrc'>               1.0</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Physical reads:</td><td align="right" class='awrnc'>               0.0</td><td align="right" class='awrnc'>               1.0</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>Physical writes:</td><td align="right" class='awrc'>               0.0</td><td align="right" class='awrc'>               1.0</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>User calls:</td><td align="right" class='awrnc'>               0.0</td><td align="right" class='awrnc'>               1.0</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>Parses:</td><td align="right" class='awrc'>               0.0</td><td align="right" class='awrc'>               1.0</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Hard parses:</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>W/A MB processed:</td><td align="right" class='awrc'>               0.0</td><td align="right" class='awrc'>               0.0</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Logons:</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>Executes:</td><td align="right" class='awrc'>               0.0</td><td align="right" class='awrc'>               1.0</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Rollbacks:</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>Transactions:</td><td align="right" class='awrc'>               0.0</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
+</table>
+<p />
+Instance Efficiency Percentages (Target 100%)
+<p />
+<table border="1" width="500">
+<tr><td class='awrc'>Buffer Nowait %:</td><td align="right" class='awrc'>&#160;</td><td class='awrc'>Redo NoWait %:</td><td align="right" class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Buffer  Hit   %:</td><td align="right" class='awrnc'>&#160;</td><td class='awrnc'>In-memory Sort %:</td><td align="right" class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>Library Hit   %:</td><td align="right" class='awrc'>&#160;</td><td class='awrc'>Soft Parse %:</td><td align="right" class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Execute to Parse %:</td><td align="right" class='awrnc'>             0.00</td><td class='awrnc'>Latch Hit %:</td><td align="right" class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>Parse CPU to Parse Elapsd %:</td><td align="right" class='awrc'>&#160;</td><td class='awrc'>% Non-Parse CPU:</td><td align="right" class='awrc'>&#160;</td></tr>
+</table>
+<p />
+Shared Pool Statisitics Not Available
+<p />
+<p />Top 5 Timed Foreground Events<p />
+<ul>
+</ul>
+<table border="1"><tr><th class="awrbg">Event</th><th class="awrbg">Waits</th><th class="awrbg">Time(s)</th><th class="awrbg">Avg wait (ms)</th><th class="awrbg">% DB time</th><th class="awrbg">Wait Class</th></tr>
+<tr><td class='awrc'>DB CPU</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>0</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>100.00</td><td class='awrc'>&#160;</td></tr>
+</table><p />
+Host CPU (CPUs:  Cores:  Sockets: )
+<p />
+<table border="1" width="500">
+<tr><th class="awrbg">Load Average Begin</th><th class="awrbg">Load Average End</th><th class="awrbg">%User</th><th class="awrbg">%System</th><th class="awrbg">%WIO</th><th class="awrbg">%Idle</th></tr>
+<tr><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td></tr>
+</table>
+Instance CPU
+<p />
+<table border="1" width="500">
+<tr><th class="awrbg">%Total CPU</th><th class="awrbg">%Busy CPU</th><th class="awrbg">%DB time waiting for CPU (Resource Manager)</th></tr>
+<tr><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td></tr>
+</table>
+Memory Statistics
+<p />
+<table border="1" width="500">
+<tr><th class="awrbg"> </th><th class="awrbg">Begin</th><th class="awrbg">End</th></tr>
+<tr><td class='awrnc'>Host Mem (MB):</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>SGA use (MB):</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>PGA use (MB):</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>% Host Mem used for SGA+PGA:</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>&#160;</td></tr>
+</table>
+<a class="awr" name="top"></a>
+<h2 class="awr">
+Main Report
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#99999">Report Summary</a></li>
+<li class="awr"><a class="awr" href="#21">Wait Events Statistics</a></li>
+<li class="awr"><a class="awr" href="#22">SQL Statistics</a></li>
+<li class="awr"><a class="awr" href="#23">Instance Activity Statistics</a></li>
+<li class="awr"><a class="awr" href="#24">IO Stats</a></li>
+<li class="awr"><a class="awr" href="#25">Buffer Pool Statistics</a></li>
+<li class="awr"><a class="awr" href="#26">Advisory Statistics</a></li>
+<li class="awr"><a class="awr" href="#27">Wait Statistics</a></li>
+<li class="awr"><a class="awr" href="#28">Undo Statistics</a></li>
+<li class="awr"><a class="awr" href="#29">Latch Statistics</a></li>
+<li class="awr"><a class="awr" href="#30">Segment Statistics</a></li>
+<li class="awr"><a class="awr" href="#4700">Dictionary Cache Statistics</a></li>
+<li class="awr"><a class="awr" href="#4900">Library Cache Statistics</a></li>
+<li class="awr"><a class="awr" href="#33">Memory Statistics</a></li>
+<li class="awr"><a class="awr" href="#34">Streams Statistics</a></li>
+<li class="awr"><a class="awr" href="#6700">Resource Limit Statistics</a></li>
+<li class="awr"><a class="awr" href="#37">Shared Server Statistics</a></li>
+<li class="awr"><a class="awr" href="#36">init.ora Parameters</a></li>
+</ul>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="21"></a>
+<h2 class="awr">
+Wait Events Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#1500">Time Model Statistics</a></li>
+<li class="awr"><a class="awr" href="#1600">Operating System Statistics</a></li>
+<li class="awr"><a class="awr" href="#1610">Operating System Statistics - Detail</a></li>
+<li class="awr"><a class="awr" href="#210">Foreground Wait Class</a></li>
+<li class="awr"><a class="awr" href="#100">Foreground Wait Events</a></li>
+<li class="awr"><a class="awr" href="#300">Background Wait Events</a></li>
+<li class="awr"><a class="awr" href="#7400">Wait Event Histogram</a></li>
+<li class="awr"><a class="awr" href="#7410">Wait Event Histogram Detail (64 msec to 2 sec)</a></li>
+<li class="awr"><a class="awr" href="#7420">Wait Event Histogram Detail (4 sec to 2 min)</a></li>
+<li class="awr"><a class="awr" href="#7430">Wait Event Histogram Detail (4 min to 1 hr)</a></li>
+<li class="awr"><a class="awr" href="#5800">Service Statistics</a></li>
+<li class="awr"><a class="awr" href="#5820">Service Wait Class Stats</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1500"></a>
+<h3 class="awr">Time Model Statistics</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1600"></a>
+<h3 class="awr">Operating System Statistics</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1610"></a>
+<h3 class="awr">Operating System Statistics - Detail</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="210"></a>
+<h3 class="awr">Foreground Wait Class</h3>
+<ul>
+<li class="awr"> s  - second, ms - millisecond -    1000th of a second </li>
+<li class="awr"> ordered by wait time desc, waits desc </li>
+<li class="awr"> %Timeouts: value of 0 indicates value was &lt; .5%.  Value of null is truly 0</li>
+<li class="awr">Captured Time accounts for %  of Total DB time            .00 (s)</li>
+<li class="awr">Total FG Wait Time:    (s)  DB CPU time:            .00 (s)</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Wait Class</th><th class="awrbg">Waits</th><th class="awrbg">%Time -outs</th><th class="awrbg">Total Wait Time (s)</th><th class="awrbg">Avg wait (ms)</th><th class="awrbg">%DB time</th></tr>
+<tr><td class='awrc'>DB CPU</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>0</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>100.00</td></tr>
+</table><p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="100"></a>
+<h3 class="awr">Foreground Wait Events</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="300"></a>
+<h3 class="awr">Background Wait Events</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7400"></a>
+<h3 class="awr">Wait Event Histogram</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7410"></a>
+<h3 class="awr">Wait Event Histogram Detail (64 msec to 2 sec)</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7420"></a>
+<h3 class="awr">Wait Event Histogram Detail (4 sec to 2 min)</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7430"></a>
+<h3 class="awr">Wait Event Histogram Detail (4 min to 1 hr)</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="5800"></a>
+<h3 class="awr">Service Statistics</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="5820"></a>
+<h3 class="awr">Service Wait Class Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#21">Back to Wait Events Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="22"></a>
+<h2 class="awr">
+SQL Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#400">SQL ordered by Elapsed Time</a></li>
+<li class="awr"><a class="awr" href="#500">SQL ordered by CPU Time</a></li>
+<li class="awr"><a class="awr" href="#550">SQL ordered by User I/O Wait Time</a></li>
+<li class="awr"><a class="awr" href="#600">SQL ordered by Gets</a></li>
+<li class="awr"><a class="awr" href="#700">SQL ordered by Reads</a></li>
+<li class="awr"><a class="awr" href="#740">SQL ordered by Physical Reads (UnOptimized)</a></li>
+<li class="awr"><a class="awr" href="#800">SQL ordered by Executions</a></li>
+<li class="awr"><a class="awr" href="#900">SQL ordered by Parse Calls</a></li>
+<li class="awr"><a class="awr" href="#1000">SQL ordered by Sharable Memory</a></li>
+<li class="awr"><a class="awr" href="#1100">SQL ordered by Version Count</a></li>
+<li class="awr"><a class="awr" href="#99997">Complete List of SQL Text</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="400"></a>
+<h3 class="awr">SQL ordered by Elapsed Time</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="500"></a>
+<h3 class="awr">SQL ordered by CPU Time</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="550"></a>
+<h3 class="awr">SQL ordered by User I/O Wait Time</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="600"></a>
+<h3 class="awr">SQL ordered by Gets</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="700"></a>
+<h3 class="awr">SQL ordered by Reads</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="740"></a>
+<h3 class="awr">SQL ordered by Physical Reads (UnOptimized)</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="800"></a>
+<h3 class="awr">SQL ordered by Executions</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="900"></a>
+<h3 class="awr">SQL ordered by Parse Calls</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1000"></a>
+<h3 class="awr">SQL ordered by Sharable Memory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1100"></a>
+<h3 class="awr">SQL ordered by Version Count</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="99997"></a>
+<p />
+<h3 class="awr">Complete List of SQL Text</h3><p />
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#22">Back to SQL Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="23"></a>
+<h2 class="awr">
+Instance Activity Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#1200">Instance Activity Stats</a></li>
+<li class="awr"><a class="awr" href="#1300">Instance Activity Stats - Absolute Values</a></li>
+<li class="awr"><a class="awr" href="#1400">Instance Activity Stats - Thread Activity</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1200"></a>
+<h3 class="awr">Instance Activity Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#23">Back to Instance Activity Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1300"></a>
+<h3 class="awr">Instance Activity Stats - Absolute Values</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#23">Back to Instance Activity Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1400"></a>
+<h3 class="awr">Instance Activity Stats - Thread Activity</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#23">Back to Instance Activity Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="24"></a>
+<h2 class="awr">
+IO Stats
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#8760">IOStat by Function summary</a></li>
+<li class="awr"><a class="awr" href="#8770">IOStat by Filetype summary</a></li>
+<li class="awr"><a class="awr" href="#8780">IOStat by Function/Filetype summary</a></li>
+<li class="awr"><a class="awr" href="#1700">Tablespace IO Stats</a></li>
+<li class="awr"><a class="awr" href="#1800">File IO Stats</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8760"></a>
+<h3 class="awr">IOStat by Function summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#24">Back to IO Stats</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8770"></a>
+<h3 class="awr">IOStat by Filetype summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#24">Back to IO Stats</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8780"></a>
+<h3 class="awr">IOStat by Function/Filetype summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#24">Back to IO Stats</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1700"></a>
+<h3 class="awr">Tablespace IO Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#24">Back to IO Stats</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1800"></a>
+<h3 class="awr">File IO Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#24">Back to IO Stats</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="25"></a>
+<h2 class="awr">
+Buffer Pool Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#1900">Buffer Pool Statistics</a></li>
+<li class="awr"><a class="awr" href="#1910">Checkpoint Activity</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1900"></a>
+<h3 class="awr">Buffer Pool Statistics</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#25">Back to Buffer Pool Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="1910"></a>
+<h3 class="awr">Checkpoint Activity</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#25">Back to Buffer Pool Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="26"></a>
+<h2 class="awr">
+Advisory Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#2000">Instance Recovery Stats</a></li>
+<li class="awr"><a class="awr" href="#2010">MTTR Advisory</a></li>
+<li class="awr"><a class="awr" href="#2100">Buffer Pool Advisory</a></li>
+<li class="awr"><a class="awr" href="#2400">PGA Aggr Summary</a></li>
+<li class="awr"><a class="awr" href="#2600">PGA Aggr Target Stats</a></li>
+<li class="awr"><a class="awr" href="#2700">PGA Aggr Target Histogram</a></li>
+<li class="awr"><a class="awr" href="#2800">PGA Memory Advisory</a></li>
+<li class="awr"><a class="awr" href="#5500">Shared Pool Advisory</a></li>
+<li class="awr"><a class="awr" href="#6900">SGA Target Advisory</a></li>
+<li class="awr"><a class="awr" href="#7100">Streams Pool Advisory</a></li>
+<li class="awr"><a class="awr" href="#5700">Java Pool Advisory</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2000"></a>
+<h3 class="awr">Instance Recovery Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2010"></a>
+<h3 class="awr">MTTR Advisory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2100"></a>
+<h3 class="awr">Buffer Pool Advisory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2400"></a>
+<h3 class="awr">PGA Aggr Summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2600"></a>
+<h3 class="awr">PGA Aggr Target Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2700"></a>
+<h3 class="awr">PGA Aggr Target Histogram</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2800"></a>
+<h3 class="awr">PGA Memory Advisory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="5500"></a>
+<h3 class="awr">Shared Pool Advisory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6900"></a>
+<h3 class="awr">SGA Target Advisory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7100"></a>
+<h3 class="awr">Streams Pool Advisory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="5700"></a>
+<h3 class="awr">Java Pool Advisory</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#26">Back to Advisory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="27"></a>
+<h2 class="awr">
+Wait Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#2300">Buffer Wait Statistics</a></li>
+<li class="awr"><a class="awr" href="#3000">Enqueue Activity</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="2300"></a>
+<h3 class="awr">Buffer Wait Statistics</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#27">Back to Wait Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3000"></a>
+<h3 class="awr">Enqueue Activity</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#27">Back to Wait Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="28"></a>
+<h2 class="awr">
+Undo Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#3300">Undo Segment Summary</a></li>
+<li class="awr"><a class="awr" href="#3400">Undo Segment Stats</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3300"></a>
+<h3 class="awr">Undo Segment Summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#28">Back to Undo Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3400"></a>
+<h3 class="awr">Undo Segment Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#28">Back to Undo Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="29"></a>
+<h2 class="awr">
+Latch Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#3500">Latch Activity</a></li>
+<li class="awr"><a class="awr" href="#3600">Latch Sleep Breakdown</a></li>
+<li class="awr"><a class="awr" href="#3700">Latch Miss Sources</a></li>
+<li class="awr"><a class="awr" href="#7500">Mutex Sleep Summary</a></li>
+<li class="awr"><a class="awr" href="#3800">Parent Latch Statistics</a></li>
+<li class="awr"><a class="awr" href="#3900">Child Latch Statistics</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3500"></a>
+<h3 class="awr">Latch Activity</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#29">Back to Latch Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3600"></a>
+<h3 class="awr">Latch Sleep Breakdown</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#29">Back to Latch Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3700"></a>
+<h3 class="awr">Latch Miss Sources</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#29">Back to Latch Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7500"></a>
+<h3 class="awr">Mutex Sleep Summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#29">Back to Latch Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3800"></a>
+<h3 class="awr">Parent Latch Statistics</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#29">Back to Latch Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="3900"></a>
+<h3 class="awr">Child Latch Statistics</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#29">Back to Latch Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="30"></a>
+<h2 class="awr">
+Segment Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#4000">Segments by Logical Reads</a></li>
+<li class="awr"><a class="awr" href="#4100">Segments by Physical Reads</a></li>
+<li class="awr"><a class="awr" href="#4104">Segments by Physical Read Requests</a></li>
+<li class="awr"><a class="awr" href="#4108">Segments by UnOptimized Reads</a></li>
+<li class="awr"><a class="awr" href="#4106">Segments by Optimized Reads</a></li>
+<li class="awr"><a class="awr" href="#4110">Segments by Direct Physical Reads</a></li>
+<li class="awr"><a class="awr" href="#4120">Segments by Physical Writes</a></li>
+<li class="awr"><a class="awr" href="#4124">Segments by Physical Write Requests</a></li>
+<li class="awr"><a class="awr" href="#4130">Segments by Direct Physical Writes</a></li>
+<li class="awr"><a class="awr" href="#4140">Segments by Table Scans</a></li>
+<li class="awr"><a class="awr" href="#4150">Segments by DB Blocks Changes</a></li>
+<li class="awr"><a class="awr" href="#4200">Segments by Row Lock Waits</a></li>
+<li class="awr"><a class="awr" href="#4300">Segments by ITL Waits</a></li>
+<li class="awr"><a class="awr" href="#4400">Segments by Buffer Busy Waits</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4000"></a>
+<h3 class="awr">Segments by Logical Reads</h3>
+<ul>
+<li class="awr">Total Logical Reads:               1</li>
+<li class="awr">Captured Segments account for   9.4E+06% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Logical Reads</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>21,376</td><td align="right" class='awrc'>2137600.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>I_OBJ2</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>9,808</td><td align="right" class='awrnc'>980800.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_JOB_NEXT</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>9,376</td><td align="right" class='awrc'>937600.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>7,312</td><td align="right" class='awrnc'>731200.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>3,600</td><td align="right" class='awrc'>360000.00</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4100"></a>
+<h3 class="awr">Segments by Physical Reads</h3>
+<ul>
+<li class="awr">Total Physical Reads:               1</li>
+<li class="awr">Captured Segments account for   4.6E+04% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Physical Reads</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>153</td><td align="right" class='awrc'>15300.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>93</td><td align="right" class='awrnc'>9300.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_HH_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>74</td><td align="right" class='awrc'>7400.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>44</td><td align="right" class='awrnc'>4400.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>HISTGRM$</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>22</td><td align="right" class='awrc'>2200.00</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4104"></a>
+<h3 class="awr">Segments by Physical Read Requests</h3>
+<ul>
+<li class="awr">Total Physical Read Requests:               1</li>
+<li class="awr">Captured Segments account for   2.0E+04% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Phys Read Requests</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>45</td><td align="right" class='awrc'>4500.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>I_WRI$_OPTSTAT_HH_ST</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>26</td><td align="right" class='awrnc'>2600.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>26</td><td align="right" class='awrc'>2600.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>HISTGRM$</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>22</td><td align="right" class='awrnc'>2200.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>17</td><td align="right" class='awrc'>1700.00</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4108"></a>
+<h3 class="awr">Segments by UnOptimized Reads</h3>
+<ul>
+<li class="awr">Total UnOptimized Read Requests:               1</li>
+<li class="awr">Captured Segments account for   2.0E+04% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">UnOptimized Reads</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>45</td><td align="right" class='awrc'>4500.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>I_WRI$_OPTSTAT_HH_ST</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>26</td><td align="right" class='awrnc'>2600.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>26</td><td align="right" class='awrc'>2600.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>HISTGRM$</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>22</td><td align="right" class='awrnc'>2200.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>17</td><td align="right" class='awrc'>1700.00</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4106"></a>
+<h3 class="awr">Segments by Optimized Reads</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4110"></a>
+<h3 class="awr">Segments by Direct Physical Reads</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4120"></a>
+<h3 class="awr">Segments by Physical Writes</h3>
+<ul>
+<li class="awr">Total Physical Writes:               1</li>
+<li class="awr">Captured Segments account for   7.8E+04% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Physical Writes</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>145</td><td align="right" class='awrc'>14500.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>136</td><td align="right" class='awrnc'>13600.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>SMON_SCN_TIME</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>71</td><td align="right" class='awrc'>7100.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>70</td><td align="right" class='awrnc'>7000.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>41</td><td align="right" class='awrc'>4100.00</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4124"></a>
+<h3 class="awr">Segments by Physical Write Requests</h3>
+<ul>
+<li class="awr">Total Physical Write Requestss:               1</li>
+<li class="awr">Captured Segments account for   5.7E+04% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Phys Write Requests</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>108</td><td align="right" class='awrc'>10800.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>81</td><td align="right" class='awrnc'>8100.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>SMON_SCN_TIME</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>63</td><td align="right" class='awrc'>6300.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>47</td><td align="right" class='awrnc'>4700.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>33</td><td align="right" class='awrc'>3300.00</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4130"></a>
+<h3 class="awr">Segments by Direct Physical Writes</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4140"></a>
+<h3 class="awr">Segments by Table Scans</h3>
+<ul>
+<li class="awr">Total Table Scans:               1</li>
+<li class="awr">Captured Segments account for   5.5E+03% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Table Scans</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_OBJ2</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>55</td><td align="right" class='awrc'>5500.00</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4150"></a>
+<h3 class="awr">Segments by DB Blocks Changes</h3>
+<ul>
+<li class="awr"> % of Capture shows % of DB Block Changes for each top segment compared  </li>
+<li class="awr"> with total DB Block Changes for all segments captured by the Snapshot</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">DB Block Changes</th><th class="awrbg">% of Capture</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>7,248</td><td align="right" class='awrc'>30.90</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>7,072</td><td align="right" class='awrnc'>30.15</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>1,936</td><td align="right" class='awrc'>8.25</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>1,808</td><td align="right" class='awrnc'>7.71</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_SCHEDULER_JOB4</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>1,232</td><td align="right" class='awrc'>5.25</td></tr>
+</table><p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4200"></a>
+<h3 class="awr">Segments by Row Lock Waits</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4300"></a>
+<h3 class="awr">Segments by ITL Waits</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="4400"></a>
+<h3 class="awr">Segments by Buffer Busy Waits</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#30">Back to Segment Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="4700"></a>
+<h3 class="awr">Dictionary Cache Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="4900"></a>
+<h3 class="awr">Library Cache Activity</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="33"></a>
+<h2 class="awr">
+Memory Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#8500">Memory Dynamic Components</a></li>
+<li class="awr"><a class="awr" href="#8600">Memory Resize Operations Summary</a></li>
+<li class="awr"><a class="awr" href="#8650">Memory Resize Ops</a></li>
+<li class="awr"><a class="awr" href="#7300">Process Memory Summary</a></li>
+<li class="awr"><a class="awr" href="#5900">SGA Memory Summary</a></li>
+<li class="awr"><a class="awr" href="#6100">SGA breakdown difference</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8500"></a>
+<h3 class="awr">Memory Dynamic Components</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#33">Back to Memory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8600"></a>
+<h3 class="awr">Memory Resize Operations Summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#33">Back to Memory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8650"></a>
+<h3 class="awr">Memory Resize Ops</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#33">Back to Memory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7300"></a>
+<h3 class="awr">Process Memory Summary</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#33">Back to Memory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="5900"></a>
+<a class="awr" href="#33">Back to Memory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6100"></a>
+<h3 class="awr">SGA breakdown difference</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#33">Back to Memory Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="34"></a>
+<h2 class="awr">
+Streams Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#6150">Streams CPU/IO Usage</a></li>
+<li class="awr"><a class="awr" href="#6200">Streams Capture</a></li>
+<li class="awr"><a class="awr" href="#6210">Streams Capture Rate</a></li>
+<li class="awr"><a class="awr" href="#6300">Streams Apply</a></li>
+<li class="awr"><a class="awr" href="#6310">Streams Apply Rate</a></li>
+<li class="awr"><a class="awr" href="#6400">Buffered Queues</a></li>
+<li class="awr"><a class="awr" href="#6500">Buffered Queue Subscribers</a></li>
+<li class="awr"><a class="awr" href="#6600">Rule Set</a></li>
+<li class="awr"><a class="awr" href="#7600">Persistent Queues</a></li>
+<li class="awr"><a class="awr" href="#7610">Persistent Queues Rate</a></li>
+<li class="awr"><a class="awr" href="#7700">Persistent Queue Subscribers</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6150"></a>
+<h3 class="awr">Streams CPU/IO Usage</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6200"></a>
+<h3 class="awr">Streams Capture</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6210"></a>
+<h3 class="awr">Streams Capture Rate</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6300"></a>
+<h3 class="awr">Streams Apply</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6310"></a>
+<h3 class="awr">Streams Apply Rate</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6400"></a>
+<h3 class="awr">Buffered Queues</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6500"></a>
+<h3 class="awr">Buffered Queue Subscribers</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6600"></a>
+<h3 class="awr">Rule Set</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7600"></a>
+<h3 class="awr">Persistent Queues</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7610"></a>
+<h3 class="awr">Persistent Queues Rate</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="7700"></a>
+<h3 class="awr">Persistent Queue Subscribers</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#34">Back to Streams Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="6700"></a>
+<h3 class="awr">Resource Limit Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="37"></a>
+<h2 class="awr">
+Shared Server Statistics
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#8710">Shared Servers Activity</a></li>
+<li class="awr"><a class="awr" href="#8720">Shared Servers Rates</a></li>
+<li class="awr"><a class="awr" href="#8730">Shared Servers Utilization</a></li>
+<li class="awr"><a class="awr" href="#8740">Shared Servers Common Queue</a></li>
+<li class="awr"><a class="awr" href="#8750">Shared Servers Dispatchers</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8710"></a>
+<h3 class="awr">Shared Servers Activity</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#37">Back to Shared Server Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8720"></a>
+<h3 class="awr">Shared Servers Rates</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#37">Back to Shared Server Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8730"></a>
+<h3 class="awr">Shared Servers Utilization</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#37">Back to Shared Server Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8740"></a>
+<h3 class="awr">Shared Servers Common Queue</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#37">Back to Shared Server Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="8750"></a>
+<h3 class="awr">Shared Servers Dispatchers</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#37">Back to Shared Server Statistics</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<a class="awr" name="36"></a>
+<h2 class="awr">
+init.ora Parameters
+</h2>
+<ul>
+<li class="awr"><a class="awr" href="#6800">init.ora Parameters</a></li>
+<li class="awr"><a class="awr" href="#6850">init.ora Multi-Valued Parameters</a></li>
+</ul>
+<a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6800"></a>
+<h3 class="awr">init.ora Parameters</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#36">Back to init.ora Parameters</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<a class="awr" name="6850"></a>
+<h3 class="awr">init.ora Multi-Valued Parameters</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<a class="awr" href="#36">Back to init.ora Parameters</a>
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<a class="awr" name="8790"></a>
+<h3 class="awr">Dynamic Remastering Stats</h3>
+
+<p />
+                  No data exists for this section of the report.
+<p />
+<br /><a class="awr" href="#top">Back to Top</a><p />
+<p />
+End of Report
+</body></html>

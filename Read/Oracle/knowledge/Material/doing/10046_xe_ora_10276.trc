@@ -1,0 +1,145 @@
+
+TKPROF: Release 11.2.0.2.0 - Development on ÐÇÆÚ¶þ 3ÔÂ 16 16:17:30 2021
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Trace file: D:\11G\app\oracle\diag\rdbms\xe\xe\trace\xe_ora_10276.trc
+Sort options: default
+
+********************************************************************************
+count    = number of times OCI procedure was executed
+cpu      = cpu time in seconds executing 
+elapsed  = elapsed time in seconds executing
+disk     = number of physical reads of buffers from disk
+query    = number of buffers gotten for consistent read
+current  = number of buffers gotten in current mode (usually for update)
+rows     = number of rows processed by the fetch or execute call
+********************************************************************************
+
+The following statement encountered a error during parse:
+
+select emp.empno,emp.ename,dept.dname from emp,dept where emp.deptno = dept.deptno
+
+Error encountered: ORA-00942
+********************************************************************************
+
+SQL ID: 3nkd3g3ju5ph1 Plan Hash: 2853959010
+
+select obj#,type#,ctime,mtime,stime, status, dataobj#, flags, oid$, spare1, 
+  spare2 
+from
+ obj$ where owner#=:1 and name=:2 and namespace=:3 and remoteowner is null 
+  and linkname is null and subname is null
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.00          0          0          0           0
+Execute      2      0.00       0.04          0          0          0           0
+Fetch        2      0.00       0.00          0          4          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        5      0.00       0.04          0          4          0           0
+
+Misses in library cache during parse: 1
+Misses in library cache during execute: 1
+Optimizer mode: CHOOSE
+Parsing user id: SYS   (recursive depth: 1)
+Number of plan statistics captured: 1
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+         0          0          0  TABLE ACCESS BY INDEX ROWID OBJ$ (cr=2 pr=0 pw=0 time=62 us cost=3 size=80 card=1)
+         0          0          0   INDEX RANGE SCAN I_OBJ2 (cr=2 pr=0 pw=0 time=54 us cost=2 size=0 card=1)(object id 37)
+
+********************************************************************************
+
+SQL ID: caap0fy8pgn59 Plan Hash: 844388907
+
+select emp.empno,emp.ename,dept.dname 
+from
+ scott.emp,scott.dept where emp.deptno = dept.deptno
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.03          0          0          0           0
+Execute      1      0.00       0.00          0          0          0           0
+Fetch        2      0.00       0.00          0         10          0          12
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        4      0.00       0.03          0         10          0          12
+
+Misses in library cache during parse: 1
+Optimizer mode: ALL_ROWS
+Parsing user id: SYS
+Number of plan statistics captured: 1
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+        12         12         12  MERGE JOIN  (cr=10 pr=0 pw=0 time=144 us cost=6 size=312 card=12)
+         4          4          4   TABLE ACCESS BY INDEX ROWID DEPT (cr=4 pr=0 pw=0 time=70 us cost=2 size=52 card=4)
+         4          4          4    INDEX FULL SCAN PK_DEPT (cr=2 pr=0 pw=0 time=47 us cost=1 size=0 card=4)(object id 20165)
+        12         12         12   SORT JOIN (cr=6 pr=0 pw=0 time=106 us cost=4 size=156 card=12)
+        12         12         12    TABLE ACCESS FULL EMP (cr=6 pr=0 pw=0 time=44 us cost=3 size=156 card=12)
+
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  SQL*Net break/reset to client                   2        0.00          0.00
+  SQL*Net message to client                       3        0.00          0.00
+  SQL*Net message from client                     3       24.79         42.12
+
+
+
+********************************************************************************
+
+OVERALL TOTALS FOR ALL NON-RECURSIVE STATEMENTS
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.03          0          0          0           0
+Execute      1      0.00       0.00          0          0          0           0
+Fetch        2      0.00       0.00          0         10          0          12
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        4      0.00       0.03          0         10          0          12
+
+Misses in library cache during parse: 1
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  SQL*Net message to client                       5        0.00          0.00
+  SQL*Net message from client                     4       24.79         59.72
+  SQL*Net break/reset to client                   2        0.00          0.00
+
+
+OVERALL TOTALS FOR ALL RECURSIVE STATEMENTS
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.00          0          0          0           0
+Execute      2      0.00       0.04          0          0          0           0
+Fetch        2      0.00       0.00          0          4          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        5      0.00       0.04          0          4          0           0
+
+Misses in library cache during parse: 1
+Misses in library cache during execute: 1
+
+    1  user  SQL statements in session.
+    1  internal SQL statements in session.
+    2  SQL statements in session.
+********************************************************************************
+Trace file: D:\11G\app\oracle\diag\rdbms\xe\xe\trace\xe_ora_10276.trc
+Trace file compatibility: 11.1.0.7
+Sort options: default
+
+       1  session in tracefile.
+       1  user  SQL statements in trace file.
+       1  internal SQL statements in trace file.
+       2  SQL statements in trace file.
+       2  unique SQL statements in trace file.
+     116  lines in trace file.
+      17  elapsed seconds in trace file.
+
+
