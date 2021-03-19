@@ -1,5 +1,5 @@
 
-<html><head><title>AWR Report for DB: XE, Inst: xe, Snaps: 232-239</title>
+<html><head><title>AWR Report for DB: XE, Inst: xe, Snaps: 242-266</title>
 <style type="text/css">
 body.awr {font:bold 10pt Arial,Helvetica,Geneva,sans-serif;color:black; background:White;}
 pre.awr  {font:8pt Courier;color:black; background:White;}
@@ -51,9 +51,9 @@ WORKLOAD REPOSITORY report for
 <p />
 <table border="1" width="500">
 <tr><th class="awrnobg"></th><th class="awrbg">Snap Id</th><th class="awrbg">Snap Time</th><th class="awrbg">Sessions</th><th class="awrbg">Cursors/Session</th></tr>
-<tr><td class='awrnc'>Begin Snap:</td><td align="right" class='awrnc'>232</td><td align="center" class='awrnc'>16-3月 -21 07:12:27</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td></tr>
-<tr><td class='awrc'>End Snap:</td><td align="right" class='awrc'>239</td><td align="center" class='awrc'>16-3月 -21 15:00:19</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>&#160;</td></tr>
-<tr><td class='awrnc'>Elapsed:</td><td class='awrnc'>&#160;</td><td align="center" class='awrnc'>             467.86 (mins)</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
+<tr><td class='awrnc'>Begin Snap:</td><td align="right" class='awrnc'>242</td><td align="center" class='awrnc'>16-3月 -21 17:00:29</td><td align="right" class='awrnc'>&#160;</td><td align="right" class='awrnc'>&#160;</td></tr>
+<tr><td class='awrc'>End Snap:</td><td align="right" class='awrc'>266</td><td align="center" class='awrc'>19-3月 -21 23:00:59</td><td align="right" class='awrc'>&#160;</td><td align="right" class='awrc'>&#160;</td></tr>
+<tr><td class='awrnc'>Elapsed:</td><td class='awrnc'>&#160;</td><td align="center" class='awrnc'>           4,680.49 (mins)</td><td class='awrnc'>&#160;</td><td class='awrnc'>&#160;</td></tr>
 <tr><td class='awrc'>DB Time:</td><td class='awrc'>&#160;</td><td align="center" class='awrc'>               0.00 (mins)</td><td class='awrc'>&#160;</td><td class='awrc'>&#160;</td></tr>
 </table>
 <p />
@@ -739,14 +739,14 @@ Segment Statistics
 <h3 class="awr">Segments by Logical Reads</h3>
 <ul>
 <li class="awr">Total Logical Reads:               1</li>
-<li class="awr">Captured Segments account for   9.4E+06% of Total</li>
+<li class="awr">Captured Segments account for   6.8E+07% of Total</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Logical Reads</th><th class="awrbg">%Total</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>21,376</td><td align="right" class='awrc'>2137600.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>I_OBJ2</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>9,808</td><td align="right" class='awrnc'>980800.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_JOB_NEXT</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>9,376</td><td align="right" class='awrc'>937600.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>7,312</td><td align="right" class='awrnc'>731200.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>3,600</td><td align="right" class='awrc'>360000.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>SEG$</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>134,176</td><td align="right" class='awrc'>13417600.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>ICOL$</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>42,480</td><td align="right" class='awrnc'>4248000.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_OBJ2</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>37,808</td><td align="right" class='awrc'>3780800.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>OPTSTAT_HIST_CONTROL$</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>32,352</td><td align="right" class='awrnc'>3235200.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>29,056</td><td align="right" class='awrc'>2905600.00</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
@@ -754,14 +754,14 @@ Segment Statistics
 <h3 class="awr">Segments by Physical Reads</h3>
 <ul>
 <li class="awr">Total Physical Reads:               1</li>
-<li class="awr">Captured Segments account for   4.6E+04% of Total</li>
+<li class="awr">Captured Segments account for   1.3E+05% of Total</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Physical Reads</th><th class="awrbg">%Total</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>153</td><td align="right" class='awrc'>15300.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>93</td><td align="right" class='awrnc'>9300.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_HH_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>74</td><td align="right" class='awrc'>7400.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>44</td><td align="right" class='awrnc'>4400.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>HISTGRM$</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>22</td><td align="right" class='awrc'>2200.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRI$_OPTSTAT_HISTHEAD_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>247</td><td align="right" class='awrc'>24700.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>I_WRI$_OPTSTAT_H_OBJ#_ICOL#_ST</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>198</td><td align="right" class='awrnc'>19800.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>197</td><td align="right" class='awrc'>19700.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>133</td><td align="right" class='awrnc'>13300.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>96</td><td align="right" class='awrc'>9600.00</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
@@ -769,14 +769,14 @@ Segment Statistics
 <h3 class="awr">Segments by Physical Read Requests</h3>
 <ul>
 <li class="awr">Total Physical Read Requests:               1</li>
-<li class="awr">Captured Segments account for   2.0E+04% of Total</li>
+<li class="awr">Captured Segments account for   5.2E+04% of Total</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Phys Read Requests</th><th class="awrbg">%Total</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>45</td><td align="right" class='awrc'>4500.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>I_WRI$_OPTSTAT_HH_ST</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>26</td><td align="right" class='awrnc'>2600.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>26</td><td align="right" class='awrc'>2600.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>HISTGRM$</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>22</td><td align="right" class='awrnc'>2200.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>17</td><td align="right" class='awrc'>1700.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_H_OBJ#_ICOL#_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>69</td><td align="right" class='awrc'>6900.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>63</td><td align="right" class='awrnc'>6300.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>HISTGRM$</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>40</td><td align="right" class='awrc'>4000.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>40</td><td align="right" class='awrnc'>4000.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRI$_OPTSTAT_HISTHEAD_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>35</td><td align="right" class='awrc'>3500.00</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
@@ -784,14 +784,14 @@ Segment Statistics
 <h3 class="awr">Segments by UnOptimized Reads</h3>
 <ul>
 <li class="awr">Total UnOptimized Read Requests:               1</li>
-<li class="awr">Captured Segments account for   2.0E+04% of Total</li>
+<li class="awr">Captured Segments account for   5.2E+04% of Total</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">UnOptimized Reads</th><th class="awrbg">%Total</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>45</td><td align="right" class='awrc'>4500.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>I_WRI$_OPTSTAT_HH_ST</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>26</td><td align="right" class='awrnc'>2600.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>26</td><td align="right" class='awrc'>2600.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>HISTGRM$</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>22</td><td align="right" class='awrnc'>2200.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>17</td><td align="right" class='awrc'>1700.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_H_OBJ#_ICOL#_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>69</td><td align="right" class='awrc'>6900.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>63</td><td align="right" class='awrnc'>6300.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>HISTGRM$</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>40</td><td align="right" class='awrc'>4000.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>40</td><td align="right" class='awrnc'>4000.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRI$_OPTSTAT_HISTHEAD_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>35</td><td align="right" class='awrc'>3500.00</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
@@ -815,14 +815,14 @@ Segment Statistics
 <h3 class="awr">Segments by Physical Writes</h3>
 <ul>
 <li class="awr">Total Physical Writes:               1</li>
-<li class="awr">Captured Segments account for   7.8E+04% of Total</li>
+<li class="awr">Captured Segments account for   2.8E+05% of Total</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Physical Writes</th><th class="awrbg">%Total</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>145</td><td align="right" class='awrc'>14500.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>136</td><td align="right" class='awrnc'>13600.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>SMON_SCN_TIME</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>71</td><td align="right" class='awrc'>7100.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>70</td><td align="right" class='awrnc'>7000.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>41</td><td align="right" class='awrc'>4100.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>368</td><td align="right" class='awrc'>36800.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>327</td><td align="right" class='awrnc'>32700.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_H_OBJ#_ICOL#_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>239</td><td align="right" class='awrc'>23900.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>215</td><td align="right" class='awrnc'>21500.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>SMON_SCN_TIME</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>147</td><td align="right" class='awrc'>14700.00</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
@@ -830,33 +830,40 @@ Segment Statistics
 <h3 class="awr">Segments by Physical Write Requests</h3>
 <ul>
 <li class="awr">Total Physical Write Requestss:               1</li>
-<li class="awr">Captured Segments account for   5.7E+04% of Total</li>
+<li class="awr">Captured Segments account for   1.9E+05% of Total</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Phys Write Requests</th><th class="awrbg">%Total</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>108</td><td align="right" class='awrc'>10800.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>81</td><td align="right" class='awrnc'>8100.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>SMON_SCN_TIME</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>63</td><td align="right" class='awrc'>6300.00</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>47</td><td align="right" class='awrnc'>4700.00</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>33</td><td align="right" class='awrc'>3300.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>259</td><td align="right" class='awrc'>25900.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>212</td><td align="right" class='awrnc'>21200.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_H_OBJ#_ICOL#_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>171</td><td align="right" class='awrc'>17100.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>SMON_SCN_TIME</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>144</td><td align="right" class='awrnc'>14400.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>117</td><td align="right" class='awrc'>11700.00</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
 <a class="awr" name="4130"></a>
 <h3 class="awr">Segments by Direct Physical Writes</h3>
-
-<p />
-                  No data exists for this section of the report.
-<p />
+<ul>
+<li class="awr">Total Direct Physical Writes:               1</li>
+<li class="awr">Captured Segments account for  100.0% of Total</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Direct Writes</th><th class="awrbg">%Total</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>TEMP</td><td class='awrc'>SYS_TEMP_0FD9D6600_17EE81</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>1</td><td align="right" class='awrc'>100.00</td></tr>
+</table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
 <a class="awr" name="4140"></a>
 <h3 class="awr">Segments by Table Scans</h3>
 <ul>
 <li class="awr">Total Table Scans:               1</li>
-<li class="awr">Captured Segments account for   5.5E+03% of Total</li>
+<li class="awr">Captured Segments account for   2.2E+04% of Total</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Table Scans</th><th class="awrbg">%Total</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_OBJ2</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>55</td><td align="right" class='awrc'>5500.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_OBJ2</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>177</td><td align="right" class='awrc'>17700.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SEG_STAT_PK</td><td class='awrnc'>WRH$_SEG_ST_2943871120_215</td><td class='awrnc'>INDEX PARTITION</td><td align="right" class='awrnc'>13</td><td align="right" class='awrnc'>1300.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_SYSAUTH1</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>8</td><td align="right" class='awrc'>800.00</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SEG_STAT_PK</td><td class='awrnc'>WRH$_SEG_ST_2943871120_257</td><td class='awrnc'>INDEX PARTITION</td><td align="right" class='awrnc'>7</td><td align="right" class='awrnc'>700.00</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>2</td><td align="right" class='awrc'>200.00</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
@@ -867,11 +874,11 @@ Segment Statistics
 <li class="awr"> with total DB Block Changes for all segments captured by the Snapshot</li>
 </ul>
 <table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">DB Block Changes</th><th class="awrbg">% of Capture</th></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>7,248</td><td align="right" class='awrc'>30.90</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>7,072</td><td align="right" class='awrnc'>30.15</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_SUMMARY</td><td class='awrc'>&#160;</td><td class='awrc'>TABLE</td><td align="right" class='awrc'>1,936</td><td align="right" class='awrc'>8.25</td></tr>
-<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_SUMMARY_INDEX</td><td class='awrnc'>&#160;</td><td class='awrnc'>INDEX</td><td align="right" class='awrnc'>1,808</td><td align="right" class='awrnc'>7.71</td></tr>
-<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_SCHEDULER_JOB4</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>1,232</td><td align="right" class='awrc'>5.25</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_H_OBJ#_COL#</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>11,456</td><td align="right" class='awrc'>11.74</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>HISTGRM$</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>11,360</td><td align="right" class='awrnc'>11.65</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>WRH$_SYSMETRIC_HISTORY_INDEX</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>10,352</td><td align="right" class='awrc'>10.61</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSAUX</td><td class='awrnc'>WRH$_SYSMETRIC_HISTORY</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>9,312</td><td align="right" class='awrnc'>9.55</td></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSAUX</td><td class='awrc'>I_WRI$_OPTSTAT_H_OBJ#_ICOL#_ST</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>7,968</td><td align="right" class='awrc'>8.17</td></tr>
 </table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
@@ -893,10 +900,14 @@ Segment Statistics
 <br /><a class="awr" href="#top">Back to Top</a><p />
 <a class="awr" name="4400"></a>
 <h3 class="awr">Segments by Buffer Busy Waits</h3>
-
-<p />
-                  No data exists for this section of the report.
-<p />
+<ul>
+<li class="awr"> % of Capture shows % of Buffer Busy Waits for each top segment compared  </li>
+<li class="awr"> with total Buffer Busy Waits for all segments captured by the Snapshot</li>
+</ul>
+<table border="1"><tr><th class="awrbg">Owner</th><th class="awrbg">Tablespace    Name</th><th class="awrbg">Object Name</th><th class="awrbg">Subobject   Name</th><th class="awrbg">Obj. Type</th><th class="awrbg">Buffer Busy Waits</th><th class="awrbg">% of Capture</th></tr>
+<tr><td class='awrc'>SYS</td><td class='awrc'>SYSTEM</td><td class='awrc'>I_SCHEDULER_JOB4</td><td class='awrc'>&#160;</td><td class='awrc'>INDEX</td><td align="right" class='awrc'>5</td><td align="right" class='awrc'>71.43</td></tr>
+<tr><td class='awrnc'>SYS</td><td class='awrnc'>SYSTEM</td><td class='awrnc'>SCHEDULER$_JOB</td><td class='awrnc'>&#160;</td><td class='awrnc'>TABLE</td><td align="right" class='awrnc'>2</td><td align="right" class='awrnc'>28.57</td></tr>
+</table><p />
 <a class="awr" href="#30">Back to Segment Statistics</a>
 <br /><a class="awr" href="#top">Back to Top</a><p />
 <p />
