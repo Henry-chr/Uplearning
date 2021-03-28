@@ -3,8 +3,9 @@ SQL_ID  asxq0hatu089b, child number 0
 select emp.empno, emp.ename, j.job_describe, dept.dname from emp, dept, 
 emp_job j where emp.deptno = dept.deptno and emp.job = j.job_name
  
-Plan hash value: 162220464
+Plan hash value: 162220464                  --SQL语句的哈希值
  
+ /*执行计划部分*/
 -----------------------------------------------------------------------------------------
 | Id  | Operation                     | Name    | Rows  | Bytes | Cost (%CPU)| Time     |
 -----------------------------------------------------------------------------------------
@@ -18,16 +19,16 @@ Plan hash value: 162220464
 |   7 |   TABLE ACCESS FULL           | EMP_JOB |     5 |   395 |     3   (0)| 00:00:01 |
 -----------------------------------------------------------------------------------------
  
-Query Block Name / Object Alias (identified by operation id):
+Query Block Name / Object Alias (identified by operation id):           --这部分显示的为查询块名和对象别名
 -------------------------------------------------------------
  
-   1 - SEL$1
-   3 - SEL$1 / DEPT@SEL$1
+   1 - SEL$1                                                            --SEL$为select 的缩写，位于块1,相应的还有DEL$,INS$,UPD$等 
+   3 - SEL$1 / DEPT@SEL$1                                               --DEPT@SEL$1，对应到执行计划中的操作ID为3上，即在表DEPT上的查询，DEPT为别名，下面类同
    4 - SEL$1 / DEPT@SEL$1
    6 - SEL$1 / EMP@SEL$1
    7 - SEL$1 / J@SEL$1
  
-Outline Data
+Outline Data                                                            --提纲部分，这部分将执行计划中的图形化方式以文本形式来呈现，即转换为提示符方式
 -------------
  
   /*+
@@ -37,12 +38,12 @@ Outline Data
       DB_VERSION('11.2.0.2')
       ALL_ROWS
       OUTLINE_LEAF(@"SEL$1")
-      INDEX(@"SEL$1" "DEPT"@"SEL$1" ("DEPT"."DEPTNO"))
-      FULL(@"SEL$1" "EMP"@"SEL$1")
+      INDEX(@"SEL$1" "DEPT"@"SEL$1" ("DEPT"."DEPTNO"))                  --指明对于DEPT上的访问方式为使用索引
+      FULL(@"SEL$1" "EMP"@"SEL$1")                                      --指明对于EMP上的访问方式为全表扫描
       FULL(@"SEL$1" "J"@"SEL$1")
-      LEADING(@"SEL$1" "DEPT"@"SEL$1" "EMP"@"SEL$1" "J"@"SEL$1")
-      USE_MERGE(@"SEL$1" "EMP"@"SEL$1")
-      USE_HASH(@"SEL$1" "J"@"SEL$1")
+      LEADING(@"SEL$1" "DEPT"@"SEL$1" "EMP"@"SEL$1" "J"@"SEL$1")        --指明前导表
+      USE_MERGE(@"SEL$1" "EMP"@"SEL$1")                                 --使用USE_MERGE提示，即MERGE SORT排序合并连接
+      USE_HASH(@"SEL$1" "J"@"SEL$1")                                    --使用USE_HASH提示，即HASH连接
       END_OUTLINE_DATA
   */
  
