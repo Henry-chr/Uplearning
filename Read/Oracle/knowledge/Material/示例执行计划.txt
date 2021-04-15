@@ -54,7 +54,7 @@ Predicate Information (identified by operation id):
    5 - access("EMP"."DEPTNO"="DEPT"."DEPTNO")
        filter("EMP"."DEPTNO"="DEPT"."DEPTNO")
  
-Column Projection Information (identified by operation id):
+Column Projection Information (identified by operation id):             --执行时每一步骤所返回的列，下面的不同步骤返回了不同的列
 -----------------------------------------------------------
  
    1 - (#keys=1) "DEPT"."DNAME"[VARCHAR2,14], "EMP"."EMPNO"[NUMBER,22], 
