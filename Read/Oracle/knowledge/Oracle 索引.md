@@ -159,3 +159,14 @@ CREATE /*+ PARALLEL(2)*/ INDEX IDX_EMP_ENAME ON EMP (ENAME);
 6. Union替换Or
 
 7. 用EXISTS替代IN、用NOT EXISTS替代NOT IN
+
+## 索引相关视图
+
+|视图|说明|
+|-|-|
+|dba_indexes all_indexes user_indexes|这类视图显示索引的基本信息，如索引名称、索引是否压缩存储、索引段的存储等信息以及使用dbms_stats包或analyze语句生成的统计信息|
+|dba_ind_columns all_ind_columns user_ind_columns|这类视图显示了被索引列的信息|
+|dba_ind_expressions all_ind_expresions user_ind_expressions|这类视图显示函数索引的函数语句|
+|dba_ind_statistics all_ind_statistics user_ind_statistics|这类视图显示对索引的优化统计信息|
+|index_stats index_histogram|显示最近一次使用analyze index... validate structure语句生成的统计信息|
+|v$object_usage|存储由alter index ... monitoring usage语句生成的索引使用信息|
