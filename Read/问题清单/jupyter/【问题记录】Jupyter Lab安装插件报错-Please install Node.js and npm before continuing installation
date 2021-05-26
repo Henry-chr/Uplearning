@@ -1,0 +1,14 @@
+# 问题描述
+
+Extension Installation Error
+An error occurred installing <code>@jupyterlab/github</code>.
+
+Error message:
+
+Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+
+## 解决方案
+
+找到conda对应环境执行以下语句：
+
+conda install nodejs
